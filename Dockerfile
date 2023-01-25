@@ -25,6 +25,6 @@ WORKDIR /app
 COPY --from=buildStage /app/ /app/
 COPY --from=buildStage /app/dist/server.js /app/server.js
 
-EXPOSE 8080
+EXPOSE 8081
 
 CMD [ "node", "server.js" ]
